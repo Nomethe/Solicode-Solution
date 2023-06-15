@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".clinte">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="10dp"-->
+<!--        >-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/FName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:hint="Prénom" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/LName"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:hint="Nom" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/nbphone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="phone"-->
+<!--            android:hint="Nombre Telephone"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:hint="example@domain.com"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:hint="Mot de passe"/>-->
+
+<!--        <RadioGroup-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1" >-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/oneM"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1 Mois" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/threeM"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="3 Mois" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/year"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1 Ans" />-->
+<!--        </RadioGroup>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/submit"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:text="Ajouter" />-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_prenom_et_nom"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Prénom et Nom"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_prenom"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Nom"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_nom"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Nombre télephon"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_email"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_password"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_confirm"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_password_24"
+                android:drawablePadding="8dp"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <RadioButton
+                            android:id="@+id/oneM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 Mois" />
+
+                        <RadioButton
+                            android:id="@+id/threeM"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3 Mois" />
+
+                        <RadioButton
+                            android:id="@+id/year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 Ans" />
+                    </RadioGroup>
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:text="Sign Up"
+                android:id="@+id/signup_button"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                app:cornerRadius = "30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginRedirectText"
+                android:text="Already an user? Login"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/lavender"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
